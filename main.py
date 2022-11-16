@@ -54,23 +54,6 @@ def _start():
         print("startedCount = False")
     app.after(ms=1000, func=_start)
 
-
-"""
-def playtime(ts):
-    global count, startedCount
-    if count == 0:
-        ms = _start()
-        startedCount = True
-        if count > ts:
-            startedCount = False
-            count = 0
-        return ms
-    else:
-        if startedCount is False:
-            print(f"ERROR: count is set to {ts} and not 0")
-        else:
-            pass
-"""
 def play():
     global isPaused, running, song, isActive
     if isPaused is False:
